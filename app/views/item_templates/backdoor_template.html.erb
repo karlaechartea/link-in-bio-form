@@ -1,18 +1,22 @@
-<h1>Add a new template</h1>
+<h1>Add a new item</h1>
 
-<form action="make_a_new_item" method="post">
+<form action="/make_a_new_item" method="post">
   <div>
     <label>Link URL</label>
-    <input type="text">
+    <input type="text" name="link_url" id="link_url">
   </div>
 
-    <div>
+  <div>
     <label>Link Description</label>
-    <input type="text" name=">
+    <input type="text" name="link_description" id="link_description">
   </div>
 
-    <div>
+  <div>
     <label>Thumbnail URL</label>
-    <input type="text">
+    <input type="text" name="thumbnail_url" id="thumbnail_url">
   </div>
+
+  <button type="submit">
+    Create item
+  </button>
 </form>
